@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme {
+  /* Base Accent: Deep Red */
+  --color-accent: rgb(110, 14, 21);
+  --color-accent-alt: rgb(220, 95, 105); /* Soft complementary red/pink for hover or backgrounds */
+
+  /* Primary: Soft Off-White */
+  --color-primary: rgb(250, 250, 250);
+  --color-primary-alt: rgb(240, 240, 245); /* subtle gray-blue tint */
+
+  /* Secondary: Deep Charcoal/Black */
+  --color-secondary: rgb(20, 20, 20);
+  --color-secondary-alt: rgb(55, 55, 55); /* lighter charcoal for cards/nav */
+
+  /* Tertiary: Warm Complement (e.g., muted gold or burnt peach) */
+  --color-tertiary: rgb(204, 134, 82);     /* muted warm orange/gold */
+  --color-tertiary-alt: rgb(245, 198, 158); /* soft highlight or background */
+
+}
+
+
+@layer base {
+  h1 {
+    @apply text-5xl font-bold tracking-tight text-[--color-secondary];
+  }
+
+  h2 {
+    @apply text-4xl font-semibold tracking-tight text-[--color-secondary];
+  }
+
+  h3 {
+    @apply text-3xl font-semibold text-[--color-secondary];
+  }
+
+  h4 {
+    @apply text-2xl font-medium text-[--color-secondary];
+  }
+
+  h5 {
+    @apply text-xl font-medium text-[--color-secondary];
+  }
+
+  h6 {
+    @apply text-lg font-medium text-[--color-secondary];
+  }
+
+  p {
+    @apply text-base leading-relaxed text-[--color-secondary];
+  }
+
+  small {
+    @apply text-sm text-[--color-secondary-alt] opacity-80;
+  }
+}
