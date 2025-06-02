@@ -2,6 +2,7 @@
 import ColorBoxes from "@/components/testing/ColorBoxes"
 import DisplayTesting from "@/components/testing/DisplayTesting"
 import HeaderTesting from "@/components/testing/HeaderTesting"
+import SplashScreen from "@/components/uiElements/splashScreen/SplashScreen"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <ColorBoxes/>
       <HeaderTesting/>
       <DisplayTesting/>
+      <SplashScreen/>
     </div>
   )
 }
